@@ -7,7 +7,7 @@ import random
 import time
 
 # Import dataset
-df = pd.read_csv('tanc-etan_system-dataset.csv')
+df = pd.read_csv('data/tanc-etan_system-dataset.csv')
 df['Countries'] = df['Countries'].apply(lambda x: literal_eval(x) if pd.notnull(x) else x)
 
 df['Vectors'] = semantic.make_vectors(4)

@@ -11,7 +11,7 @@ import subprocess
 pureData_synth_path = "semantic_synth(with-effects).pd" #add pure data patch here!
 #subprocess.Popen(["pd", "-nogui", pureData_synth_path])
 
-bert = np.load('tate_wellcome_SEA_text_embeddings.npy')
+bert = np.load('data/tate_wellcome_SEA_text_embeddings.npy')
 
 #this takes the full embeddings and squashes them down to a smaller vector of length n, e.g. 10
 def make_vectors(vector_length, embeddings=bert):
